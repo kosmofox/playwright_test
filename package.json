@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "pretest": "tsc --incremental -p tsconfig.json",
+    "test": "playwright test -c tests-out",
+    "test:ui": "playwright test -c tests-out --ui"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.7.1",
   "devDependencies": {
     "@playwright/test": "^1.51.1",
-    "@types/node": "^22.14.0"
+    "@types/node": "^22.14.0",
+    "playwright-core": "^1.51.1",
+    "typescript": "^5.8.2"
   }
 }
