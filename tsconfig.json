@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "sourceMap": true,
+    "outDir": "./tests-out",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false
+  },
+  "include": ["tests/**/*", "src/**/*", "config/**/*", "test-data/**/*"],
+  "exclude": ["node_modules", "tests-out"]
+}
